@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import { set_access_token } from "./../utils/accessToken";
-import "./details.css";
 
 const Details = () => {
    const params = useParams();
@@ -39,7 +38,7 @@ const Details = () => {
                <div style={{ width: "100%", padding: "5%" }}>
                   <div className='h-96 bg-cover flex flex-wrap' style={{ backgroundImage: `url(${data.images})` }}>
                      <br />
-                     <h className='detailedview_heading font-bold text-4xl pt-3 pl-5 text-white  text-center'>{data.name} </h>
+                     <h className=' font-bold text-4xl pt-3 pl-5 text-white  text-center'>{data.name} </h>
                   </div>
 
                   <div className='App'>

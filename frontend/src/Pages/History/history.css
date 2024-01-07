@@ -187,8 +187,8 @@ header:before {
 .btn {
    padding: 10px 30px;
    text-decoration: none;
-   background: rgb(170, 56, 159);
-   border: 1px solid rgb(170, 56, 159);
+   background: rgb(63 52 153);
+   border: 1px solid rgb(63 52 153);
    color: #fff;
    display: inline-block;
    position: relative;
@@ -200,8 +200,8 @@ header:before {
 
 .btn:hover {
    box-shadow: none;
-   background: rgb(170, 56, 159);
-   border-color: rgb(170, 56, 159);
+   background: rgb(96, 79, 230);
+   border: 1px solid rgb(84, 69, 202);
 }
 
 .right {

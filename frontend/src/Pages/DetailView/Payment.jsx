@@ -1,32 +1,32 @@
 import React from "react";
-// import { ethers } from "ethers";
+import { ethers } from "ethers";
 
-// const startPayment = async ({ ether, addr }) => {
-//    try {
-//       if (!window.ethereum) throw new Error("No crypto wallet found. Please install it.");
-//       await window.ethereum.send("eth_requestAccounts");
-//       const provider = new ethers.providers.Web3Provider(window.ethereum);
-//       const signer = provider.getSigner();
-//       ethers.utils.getAddress(addr);
-//       const tx = await signer.sendTransaction({
-//          to: addr,
-//          value: ethers.utils.parseEther(ether),
-//       });
-//       console.log({ ether, addr });
-//    } catch (err) {
-//       console.log(err.message);
-//    }
-// };
+const startPayment = async ({ ether, addr }) => {
+   try {
+      if (!window.ethereum) throw new Error("No crypto wallet found. Please install it.");
+      await window.ethereum.send("eth_requestAccounts");
+      const provider = new ethers.providers.Web3Provider(window.ethereum);
+      const signer = provider.getSigner();
+      ethers.utils.getAddress(addr);
+      const tx = await signer.sendTransaction({
+         to: addr,
+         value: ethers.utils.parseEther(ether),
+      });
+      console.log({ ether, addr });
+   } catch (err) {
+      console.log(err.message);
+   }
+};
 
 export default function Payment() {
    const handleSubmit = async (e) => {
       e.preventDefault();
       const data = new FormData(e.target);
 
-      // await startPayment({
-      //    ether: data.get("ether"),
-      //    addr: data.get("addr"),
-      // });
+      await startPayment({
+         ether: data.get("ether"),
+         addr: data.get("addr"),
+      });
    };
 
    return (
@@ -44,7 +44,7 @@ export default function Payment() {
                </div>
             </main>
             <footer className='p-4'>
-               <button type='submit' style={{ backgroundImage: "linear-gradient(to right, #be53e1, #641cea)" }} className='btn btn-primary submit-button focus:ring focus:outline-none w-full'>
+               <button type='submit' className='bg-gradient-to-tr from-blue-500 to-cyan-400 btn btn-primary submit-button focus:ring focus:outline-none w-full'>
                   Pay now
                </button>
             </footer>

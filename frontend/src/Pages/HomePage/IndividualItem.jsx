@@ -48,8 +48,7 @@ function IndividualItem() {
                            <div className='text-center text-lg px-3 mt-2 text-xl'>{data.target_amount} ETH</div>
                         </span>
                         <div className='flex items-center px-3 mt-2'>
-                           <span className='ml-2 text-zinc-400'>#{data.type}</span>
-                           <span className='flex items-center ml-10 '>
+                           <span className='flex items-center ml-35 '>
                               <span>
                                  <img src='https://user-images.githubusercontent.com/43414928/175196130-2a4500a9-2231-4fb4-a406-a44a29ee4598.png' className='w-4 h-4' alt='item-owner' />
                               </span>

@@ -167,6 +167,6 @@ body {
 .individualcampaign {
    background: rgba(62, 62, 62, 0.149);
    padding: 1em;
-   height: 250px;
+   height: 300px;
    backdrop-filter: blur(10px);
 }

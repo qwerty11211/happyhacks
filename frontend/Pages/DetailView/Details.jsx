@@ -1,7 +1,6 @@
 import Payment from "./Payment";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import ShareButtons from "../ShareButton/ShareButtons";
 import axios from "axios";
 import { set_access_token } from "./../utils/accessToken";
 import "./details.css";
@@ -40,18 +39,7 @@ const Details = () => {
                <div style={{ width: "100%", padding: "5%" }}>
                   <div className='h-96 bg-cover flex flex-wrap' style={{ backgroundImage: `url(${data.images})` }}>
                      <br />
-                     <h className='detailedview_heading font-bold text-4xl pt-3 pl-5 text-white  text-center'>
-                        {data.name}{" "}
-                        <span className='mt-2' style={{ float: "right" }}>
-                           {" "}
-                           {data.is_verified && <img src='https://cdn-icons-png.flaticon.com/512/6269/6269646.png' height='20' width='20' />}
-                        </span>
-                     </h>
-                  </div>
-                  <div className='flex items-center text-center space-x-6 mt-4'>
-                     <span>
-                        <ShareButtons title='Check out this campaign and do make a contribution if you can' url={`http://localhost:3000/campaign/${data.id}`} />
-                     </span>
+                     <h className='detailedview_heading font-bold text-4xl pt-3 pl-5 text-white  text-center'>{data.name} </h>
                   </div>
 
                   <div className='App'>

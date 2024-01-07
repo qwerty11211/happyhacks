@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "./Header";
 import AboutUsHeader from "./AboutUsHeader";
 import SidebarLeft from "./Sidebar";
 import { Outlet } from "react-router-dom";
@@ -9,7 +8,6 @@ import "./homepage.css";
 const Dashboard = () => {
    return (
       <>
-         <Header />
          <SidebarLeft />
 
          <div className='flex flex-col md:flex-row'>

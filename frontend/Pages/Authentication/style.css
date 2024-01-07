@@ -3,12 +3,7 @@
    padding: 0;
    box-sizing: border-box;
 }
-/* *
-{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;  
-} */
+
 .main {
    width: 95%;
    margin-left: 5%;
@@ -72,12 +67,4 @@
 .form .input .inputBox input::placeholder {
    color: #555;
    font-size: 0.8rem;
-}
-.forget {
-   margin-top: 2rem;
-   color: #555;
-}
-.forget a {
-   color: #c44569;
-   text-decoration: none;
 }
